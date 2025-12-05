@@ -85,7 +85,7 @@ useradd -m -G *additional_groups* -s *login_shell* username
 
 -s / --shell a path to the user's 
 
-**useradd will create a group called like the username and make the Default group the Created one**
+**useradd will create a group called like the username and make it the Default group for the Created user**
 
 to set the password to the newly creaded user 
 
