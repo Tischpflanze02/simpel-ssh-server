@@ -40,7 +40,7 @@ The line that starts with inet contains the ip addres
 To connect to the ssh server excecute:
 
 ```bash
-ssh *username*@*ip-address*
+ssh username@ip-address
 ```
 
 # Configurering Users 
@@ -62,13 +62,13 @@ stat -c %A /media/sf_Shared/
 to check the owned files by a user 
 
 ```bash
-find / -user *user*
+find / -user user
 ```
 
 to Check the owned files by a group
 
 ```bash
-find / -group *groupname*
+find / -group groupname
 ```
 
 ## User management 
@@ -76,7 +76,7 @@ find / -group *groupname*
 to add a new user, use the useradd command:
 
 ```bash
-useradd -m -G *additional_groups* -s *login_shell* *username*
+useradd -m -G *additional_groups* -s *login_shell* username
 ```
 
 -m / --create-home creates a home for the user : /home/*username* 
@@ -90,7 +90,7 @@ useradd -m -G *additional_groups* -s *login_shell* *username*
 to set the password to the newly creaded user 
 
 ```bash
-passwd *username*
+passwd username
 ```
 
 ## To Config Groups
@@ -99,7 +99,7 @@ By Default a group from a user can only read/write the files they created themse
 To change the abbilty to read/write other directorys use
 
 ```bash
-chmod g+s *directory*
+chmod g+s directory
 ```
 
 ## Program for Password and account management tool suite.
