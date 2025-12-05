@@ -45,6 +45,8 @@ ssh username@ip-address
 
 # Configurering Users 
 
+## Checking User/groups 
+
 To check the owner of an file 
 
 ```bash
@@ -69,6 +71,20 @@ to Check the owned files by a group
 find / -group groupname
 ```
 
+## User management 
+
+to add a new user, use the useradd command:
+
+```bash
+useradd -m
+```
+
+-m / --create-home creates a home for the user : /home/*username* 
+
+-G / --groups to add to given groups
+
+-s / --shell
+
 ## Program for Password and account management tool suite.
 
 install
@@ -77,4 +93,6 @@ install
 pacman -S shadow
 ```
 
+# Quelle 
 
+https://wiki.archlinux.org/title/Users_and_groups
