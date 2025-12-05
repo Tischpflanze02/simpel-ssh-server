@@ -85,12 +85,22 @@ useradd -m -G additional_groups -s login_shell username
 
 -s / --shell a path to the user's 
 
+**useradd will create a group called like the username and make the Default group the Created one**
+
 to set the password to the newly creaded user 
 
 ```bash
 passwd username
 ```
 
+## To Config Groups
+
+By Default a group from a user can only read/write the files they created themself.
+To change the abbilty to read/write other directorys use
+
+```bash
+chmod g+s *directory*
+```
 
 ## Program for Password and account management tool suite.
 
