@@ -76,18 +76,25 @@ find / -group groupname
 to add a new user, use the useradd command:
 
 ```bash
-useradd -m
+useradd -m -G additional_groups -s login_shell username
 ```
 
 -m / --create-home creates a home for the user : /home/*username* 
 
 -G / --groups to add to given groups
 
--s / --shell
+-s / --shell a path to the user's 
+
+to set the password to the newly creaded user 
+
+```bash
+passwd username
+```
+
 
 ## Program for Password and account management tool suite.
 
-install
+Install
 
 ```bash
 pacman -S shadow
