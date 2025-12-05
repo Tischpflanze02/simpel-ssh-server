@@ -45,7 +45,7 @@ ssh username@ip-address
 
 # Configurering Users 
 
-## To check the owner of an file 
+To check the owner of an file 
 
 ```bash
 stat -c %U /media/sf_Shared/
