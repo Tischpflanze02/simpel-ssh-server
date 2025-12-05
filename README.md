@@ -57,3 +57,24 @@ to check Access right from a user
 stat -c %A /media/sf_Shared/
 ```
 
+to check the owned files by a user 
+
+```bash
+find / -user user
+```
+
+to Check the owned files by a group
+
+```bash
+find / -group groupname
+```
+
+## Program for Password and account management tool suite.
+
+install
+
+```bash
+pacman -S shadow
+```
+
+
