@@ -14,13 +14,15 @@ Password and account management tool suite with support for shadow files and PAM
 sudo systemctl start sshd
 ```
 
-## autosart ssh on boot
+## autosart ssh service on boot
 
 ```bash
 sudo systemctl enable sshd
 ```
 
 ## Setting up firewall to open up a port
+
+**Not needed if you wannt to use the ssh server localy**
 
 ```bash
 sudo ufw allow {port}/tcp
